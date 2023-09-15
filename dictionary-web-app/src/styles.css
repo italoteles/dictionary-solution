@@ -1,1 +1,152 @@
-/* You can add global styles to this file, and also import other style files */
+
+/* ------------------- */
+/* Variables         */
+/* ------------------- */
+
+:root{
+
+
+/* Colors */
+
+  --dark-lightness-2: #050505;
+  --dark-lightness-12: #1F1F1F;
+  --dark-lightness-18: #2D2D2D;
+  --dark-lightness-23: #3A3A3A;
+  --gray: #757575;
+  --white-lightness-91: #E9E9E9;
+  --white-lightness-96: #F4F4F4;
+  --white: #FFFFFF;
+  --purple: #A445ED;
+  --red: #FF5252;
+
+  --typography: inter;
+
+  --bg-color: #FFFFFF;
+  --text-color: #2D2D2D;
+
+}
+
+
+/* Typography */
+
+@font-face {
+  font-family: 'inter';
+  src: url('./assets/fonts/Inter-VariableFont_slntwght.ttf');
+}
+@font-face {
+  font-family: 'lora';
+  src: url('./assets/fonts/Lora-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: 'inconsolata';
+  src: url('./assets/fonts/Inconsolata-VariableFont_wdthwght.ttf');
+}
+
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+/* make images easier to work with */
+img,
+picutre {
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+
+/* set up the body */
+body {
+  font-family: var(--typography);
+  min-height: 100vh;
+
+}
+
+
+
+
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+
+/* general */
+
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+.heading-l{
+  font-family: var(--typography);
+  font-size: 64px;
+  line-height: 77px;
+ }
+
+ .heading-m{
+  font-family: var(--typography);
+  font-size: 24px;
+  line-height: 29px;
+ }
+
+ .heading-s{
+  font-family: var(--typography);
+  font-size: 20px;
+  line-height: 24px;
+ }
+
+ .body-m{
+  font-family: var(--typography);
+  font-size: 18px;
+  line-height: 24px;
+ }
+
+ .body-s{
+  font-family: var(--typography);
+  font-size: 14px;
+  line-height: 17px;
+ }
+
+
+
+
