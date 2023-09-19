@@ -1,3 +1,9 @@
+/* ------------------- */
+/* imports         */
+/* ------------------- */
+
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
 
 /* ------------------- */
 /* Variables         */
@@ -99,6 +105,8 @@ select {
 body {
   font-family: var(--typography);
   min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 
 }
 

@@ -25,7 +25,37 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              {
+                "input": "src/assets/themes/lora-light.css",
+                "bundleName": "lora-light",
+                "inject": false
+              },
+              {
+                "input": "src/assets/themes/lora-dark.css",
+                "bundleName": "lora-dark",
+                "inject": false
+              },
+              {
+                "input": "src/assets/themes/inter-light.css",
+                "bundleName": "inter-light",
+                "inject": false
+              },
+              {
+                "input": "src/assets/themes/inter-dark.css",
+                "bundleName": "inter-dark",
+                "inject": false
+              },
+              {
+                "input": "src/assets/themes/inconsolata-light.css",
+                "bundleName": "inconsolata-light",
+                "inject": false
+              },
+              {
+                "input": "src/assets/themes/inconsolata-dark.css",
+                "bundleName": "inconsolata-dark",
+                "inject": false
+              }
             ],
             "scripts": []
           },

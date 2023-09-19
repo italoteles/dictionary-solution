@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
+import { ThemesService } from 'src/app/services/themes.service';
 
 @Component({
   selector: 'app-start-page',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./start-page.component.css']
 })
 export class StartPageComponent {
+
+  constructor(private theme: ThemesService) { }
+
+
+  // public loraDark(){
+  //   this.theme.loadTheme('lora-dark');
+  // }
 
 }
