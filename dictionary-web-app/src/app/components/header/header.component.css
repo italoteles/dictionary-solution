@@ -1,10 +1,61 @@
-/* :host ::ng-deep
-    .p-inputswitch.p-inputswitch-checked:hover
-    .p-inputswitch-slider {
-    background: var(--purple);
-} */
+.header-container{
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-font-theme{
+  display: flex;
+  flex-grow: 2;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-color-theme{
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+  border-left: solid 1px #979797;
+  padding-left: 7px;
+  margin-left: 7px;
+}
+
+:host ::ng-deep .p-dropdown-label {
+  font-weight: 700;
+  font-family: var(--typography);
+  font-size: 14px;
+}
+:host ::ng-deep .p-dropdown{
+  width: 170px;
+  text-align: right;
+}
+
+:host ::ng-deep .p-dropdown .p-dropdown-trigger{
+  width: 1.5rem;
+
+}
+
+
+
 :host ::ng-deep
-    .p-inputswitch.p-inputswitch-checked:hover
-    .p-inputswitch-slider {
+    .p-inputswitch.p-inputswitch-checked:hover .p-inputswitch-slider {
     background-color: var(--purple);
 }
+
+:host ::ng-deep
+  .p-inputswitch {
+    height: 1.5rem;
+    width: 2.6rem;
+    &.p-inputswitch-checked {
+        .p-inputswitch-slider::before {
+            transform: translateX(1rem);
+        }
+    }
+
+    .p-inputswitch-slider::before {
+        width: 0.9rem;
+        height: 0.9rem;
+        margin-top: -0.45rem;
+    }
+  }
+
