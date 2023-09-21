@@ -14,7 +14,7 @@
 .header-color-theme{
   flex-grow: 1;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   border-left: solid 1px #979797;
   padding-left: 7px;
   margin-left: 7px;
@@ -24,10 +24,12 @@
   font-weight: 700;
   font-family: var(--typography);
   font-size: 14px;
+  color: var(--text-color);
 }
 :host ::ng-deep .p-dropdown{
   width: 170px;
   text-align: right;
+  background-color: var(--bg-color);
 }
 
 :host ::ng-deep .p-dropdown .p-dropdown-trigger{

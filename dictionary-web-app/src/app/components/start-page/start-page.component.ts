@@ -8,7 +8,7 @@ import { ThemesService } from 'src/app/services/themes.service';
 })
 export class StartPageComponent {
 
-  constructor(private theme: ThemesService) { }
+  constructor() { }
 
 
   // public loraDark(){
