@@ -10,7 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DropdownModule } from 'primeng/dropdown';
 import { InputSearchComponent } from './components/input-search/input-search.component';
 import { InputTextModule } from 'primeng/inputtext';
-
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,8 @@ import { InputTextModule } from 'primeng/inputtext';
     BrowserAnimationsModule,
     DropdownModule,
     InputTextModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
