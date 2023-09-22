@@ -8,13 +8,16 @@ import { InputSwitchModule } from 'primeng/inputswitch';
 import { HeaderComponent } from './components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DropdownModule } from 'primeng/dropdown';
+import { InputSearchComponent } from './components/input-search/input-search.component';
+import { InputTextModule } from 'primeng/inputtext';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     StartPageComponent,
-    HeaderComponent
+    HeaderComponent,
+    InputSearchComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +25,9 @@ import { DropdownModule } from 'primeng/dropdown';
     InputSwitchModule,
     FormsModule,
     BrowserAnimationsModule,
-    DropdownModule
+    DropdownModule,
+    InputTextModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

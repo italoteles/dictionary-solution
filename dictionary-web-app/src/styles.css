@@ -4,6 +4,7 @@
 
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
 
 /* ------------------- */
 /* Variables         */
@@ -29,6 +30,7 @@
 
   --bg-color: #FFFFFF;
   --text-color: #2D2D2D;
+  --input-bg-color: #F4F4F4
 
 }
 
