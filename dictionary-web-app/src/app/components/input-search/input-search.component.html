@@ -1,4 +1,4 @@
-<form [formGroup]="formGroup" (ngSubmit)="searchWord(formGroup)">
+<form [formGroup]="formGroup" (keydown)="searchWord($event)">
   <span class="p-input-icon-right">
       <i class="pi pi-search"></i>
       <input type="text" pInputText [(ngModel)]="searchText" placeholder="Search for any word..." formControlName="word" />

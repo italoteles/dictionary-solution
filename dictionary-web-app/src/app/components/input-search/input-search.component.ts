@@ -19,9 +19,13 @@ export class InputSearchComponent implements OnInit{
     });
   }
 
-  searchWord(form: FormGroup) {
-    console.log('Valid?', form.valid); // true or false
-    console.log('Name', form.value.word);
 
+  searchWord(event) {
+    if (event.keyCode === 13 && this.formGroup.valid) {
+      //call API
+
+    }
   }
+
+
 }
