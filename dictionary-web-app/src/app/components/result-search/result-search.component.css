@@ -15,6 +15,16 @@
 
 }
 
+.header-audio-play:hover{
+  fill:#FFF;
+
+}
+
+.header-audio-circle:hover{
+  opacity: 0.8;
+
+}
+
 .part-of-speech{
   padding-top: 10px;
 
