@@ -5,24 +5,47 @@
       <p class="header-phonetic">{{ getService().currentResult[0].phonetic}}</p>
 
     </div>
-    <div class="header-audio body-m">
+    <div class="header-audio">
       <svg *ngIf="((getService().currentResult[0].phonetics[0].audio != ''))" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 75 75"><g fill="#A445ED" fill-rule="evenodd"><circle cx="37.5" cy="37.5" r="37.5" opacity=".25"/><path d="M29 27v21l21-10.5z"/></g></svg>
 
     </div>
 
   </div>
 
-  <div class="meaning">
-    <div class="meaning-header">
-      <span class="part-of-speech">{{ getService().currentResult[0].meanings[0].partOfSpeech}}</span>
-      <div class="line-container">
-        <hr class="line">
+  <ng-container *ngFor="let meaning of getService().currentResult[0].meanings; index as i">
+
+    <div class="meaning">
+      <div class="meaning-header">
+        <span class="part-of-speech">{{ meaning.partOfSpeech}}</span>
+        <div class="line-container">
+          <hr class="line">
+
+        </div>
 
       </div>
 
+      <div class="meaning-content">
+        <p class="sub-title">Meaning</p>
+        <ul>
+          <ng-container *ngFor="let definition of meaning.definitions">
+            <li>
+              <span class="definition">{{definition.definition}}</span>
+            </li>
+          </ng-container>
+
+        </ul>
+      </div>
+      <div>
+        <span class="sub-title">Synonyms:</span>
+        <span class="synonyms"> {{getService().getSynonyms(i)}}</span>
+      </div>
+
     </div>
-    <div class="meaning-content">
-      <p class="meaning-title">Meaning</p>
-    </div>
+  </ng-container>
+  <hr class="divider">
+  <div class="footer">
+    <p class="sub-title footer-title">Source</p>
+    <a href="{{getService().currentResult[0].sourceUrls}}" class="footer-source">{{getService().currentResult[0].sourceUrls}}</a>
   </div>
+
 </div>

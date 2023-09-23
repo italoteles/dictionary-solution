@@ -22,6 +22,10 @@
 
 }
 
+.meaning{
+  margin-bottom: 40px;
+}
+
 .meaning-header{
   display: flex;
 
@@ -42,9 +46,49 @@
 
 }
 
-.meaning-title{
+.sub-title{
   margin-top: 25px;
   color: #757575;
   font-size: 16px;
 }
 
+li{
+  margin-top:14px;
+}
+li::marker{
+  color: var(--purple);
+}
+
+.definition{
+  line-height: 24px;
+}
+
+.synonyms{
+  color: var(--purple);
+  font-weight: 800;
+  padding-left: 30px;
+
+}
+
+.divider{
+  border-color:  hsla(0, 0%, 56%, 0.219);
+  width: 100%;
+}
+
+.footer{
+  margin-bottom: 50px;
+}
+
+.footer-title{
+  text-decoration: underline;
+}
+
+.footer-source{
+  color: var(--text-color)
+}
+
+.footer-source:after{
+  content: url(../../../assets/images/icon-new-window.svg);
+  padding-left:5px;
+
+}
