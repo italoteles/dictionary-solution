@@ -27,6 +27,7 @@ export class InputSearchComponent implements OnInit{
   searchWord(event) {
     if (event.keyCode === 13 && this.formGroup.valid) {
       this.dictionaryService.currentResult = null;
+      this.dictionaryService.error = null;
       this.dictionaryService.getMeaning(this.searchText).subscribe({
         next: (result: ResultDictionary) => {
 
@@ -46,6 +47,7 @@ export class InputSearchComponent implements OnInit{
   searchWordClick(){
     if (this.formGroup.valid) {
       this.dictionaryService.currentResult = null;
+      this.dictionaryService.error = null;
       this.dictionaryService.getMeaning(this.searchText).subscribe({
         next: (result: ResultDictionary) => {
 
