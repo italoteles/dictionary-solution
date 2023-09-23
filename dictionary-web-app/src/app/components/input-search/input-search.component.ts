@@ -40,5 +40,22 @@ export class InputSearchComponent implements OnInit{
     }
   }
 
+  searchWordClick(){
+    if (this.formGroup.valid) {
+      this.dictionaryService.getMeaning(this.searchText).subscribe({
+        next: (result: ResultDictionary) => {
+
+          this.dictionaryService.currentResult = result;
+
+
+        },
+        error: (error: any) => {
+          console.error(error);
+        }
+      })
+
+    }
+  }
+
 
 }

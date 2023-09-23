@@ -1,6 +1,6 @@
 <form [formGroup]="formGroup" (keydown)="searchWord($event)">
   <span class="p-input-icon-right">
-      <i class="pi pi-search"></i>
+      <i class="pi pi-search" (click)="searchWordClick()"></i>
       <input type="text" pInputText [(ngModel)]="searchText" placeholder="Search for any word..." formControlName="word" />
   </span>
   <div class="error" *ngIf="formGroup.get('word').invalid && (formGroup.get('word').dirty || formGroup.get('word').touched)">
