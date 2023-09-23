@@ -11,12 +11,13 @@
 
 .header-phonetic{
   color: var(--purple);
-  padding-top: 10px
+  padding-top: 10px;
+
 }
 
 .part-of-speech{
   padding-top: 10px;
-  font-size: 18px;
+
   font-weight: 800;
   font-style: italic;
 
@@ -49,7 +50,7 @@
 .sub-title{
   margin-top: 25px;
   color: #757575;
-  font-size: 16px;
+
 }
 
 li{
@@ -90,5 +91,24 @@ li::marker{
 .footer-source:after{
   content: url(../../../assets/images/icon-new-window.svg);
   padding-left:5px;
+
+}
+
+
+@media (min-width: 768px) {
+
+  .header-word{
+    font-size: 64px;
+
+  }
+  .header-audio svg{
+    width: 64px;
+    height: 64px;
+
+  }
+  .header-phonetic{
+    font-size: 24px;
+
+  }
 
 }

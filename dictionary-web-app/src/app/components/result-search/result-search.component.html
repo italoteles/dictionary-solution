@@ -2,14 +2,11 @@
   <div class="header">
     <div class="header-content">
       <p class="header-word">{{getService().currentResult[0].word}}</p>
-      <p class="header-phonetic">{{ getService().currentResult[0].phonetic}}</p>
+      <p class="header-phonetic body-m">{{ getService().currentResult[0].phonetic}}</p>
 
     </div>
     <div class="header-audio">
       <svg (click)="playAudio()" *ngIf="((getService().currentResult[0].phonetics[0].audio != ''))" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 75 75"><g fill="#A445ED" fill-rule="evenodd"><circle cx="37.5" cy="37.5" r="37.5" opacity=".25"/><path d="M29 27v21l21-10.5z"/></g></svg>
-      <!-- <audio id="audio">
-        <source src="{{getService().currentResult[0].phonetics[0].audio}}" />
-      </audio> -->
     </div>
 
   </div>
@@ -18,7 +15,7 @@
 
     <div class="meaning">
       <div class="meaning-header">
-        <span class="part-of-speech">{{ meaning.partOfSpeech}}</span>
+        <span class="part-of-speech heading-m">{{ meaning.partOfSpeech}}</span>
         <div class="line-container">
           <hr class="line">
 
@@ -27,26 +24,26 @@
       </div>
 
       <div class="meaning-content">
-        <p class="sub-title">Meaning</p>
+        <p class="sub-title body-m">Meaning</p>
         <ul>
           <ng-container *ngFor="let definition of meaning.definitions">
             <li>
-              <span class="definition">{{definition.definition}}</span>
+              <span class="definition body-m">{{definition.definition}}</span>
             </li>
           </ng-container>
 
         </ul>
       </div>
       <div>
-        <span class="sub-title">Synonyms:</span>
-        <span class="synonyms"> {{getService().getSynonyms(i)}}</span>
+        <span class="sub-title body-m">Synonyms:</span>
+        <span class="synonyms body-m"> {{getService().getSynonyms(i)}}</span>
       </div>
 
     </div>
   </ng-container>
   <hr class="divider">
   <div class="footer">
-    <p class="sub-title footer-title">Source</p>
+    <p class="sub-title body-m footer-title">Source</p>
     <a href="{{getService().currentResult[0].sourceUrls}}" class="footer-source">{{getService().currentResult[0].sourceUrls}}</a>
   </div>
 
