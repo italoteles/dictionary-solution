@@ -11,13 +11,15 @@ import { DropdownModule } from 'primeng/dropdown';
 import { InputSearchComponent } from './components/input-search/input-search.component';
 import { InputTextModule } from 'primeng/inputtext';
 import { HttpClientModule} from '@angular/common/http';
+import { ResultSearchComponent } from './components/result-search/result-search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StartPageComponent,
     HeaderComponent,
-    InputSearchComponent
+    InputSearchComponent,
+    ResultSearchComponent
   ],
   imports: [
     BrowserModule,

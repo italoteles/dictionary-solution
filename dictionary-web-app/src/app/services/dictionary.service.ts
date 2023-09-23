@@ -10,6 +10,8 @@ export class DictionaryService {
 
   url = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 
+  public currentResult : ResultDictionary;
+
   constructor(private http : HttpClient) { }
 
   public getMeaning(word : string) : Observable<ResultDictionary>{

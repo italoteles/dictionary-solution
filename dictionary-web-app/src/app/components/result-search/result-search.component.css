@@ -1,0 +1,50 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-word{
+  font-size: 32px;
+  font-weight: 800;
+
+}
+
+.header-phonetic{
+  color: var(--purple);
+  padding-top: 10px
+}
+
+.part-of-speech{
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: italic;
+
+}
+
+.meaning-header{
+  display: flex;
+
+}
+.line-container{
+  position: relative;
+  width: 100%;
+}
+
+.line{
+  margin-left: 10px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-color:  hsla(0, 0%, 56%, 0.219);
+  opacity: 0.8;
+
+}
+
+.meaning-title{
+  margin-top: 25px;
+  color: #757575;
+  font-size: 16px;
+}
+

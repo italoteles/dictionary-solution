@@ -27,8 +27,10 @@ export class InputSearchComponent implements OnInit{
     if (event.keyCode === 13 && this.formGroup.valid) {
       this.dictionaryService.getMeaning(this.searchText).subscribe({
         next: (result: ResultDictionary) => {
-          console.log(result);
-          this.resultSearch = result;
+
+          this.dictionaryService.currentResult = result;
+          console.log(this.dictionaryService.currentResult);
+          console.log(this.dictionaryService.currentResult[0].meanings);
 
         },
         error: (error: any) => {
