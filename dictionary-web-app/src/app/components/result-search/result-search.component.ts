@@ -14,4 +14,10 @@ export class ResultSearchComponent {
   getService() : DictionaryService{
     return this.serviceDictionary;
   }
+
+  playAudio(){
+    let audio: HTMLAudioElement = new Audio(this.getService().currentResult[0].phonetics[0].audio);
+     audio.play();
+
+  }
 }

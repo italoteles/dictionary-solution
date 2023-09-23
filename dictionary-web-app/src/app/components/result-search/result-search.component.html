@@ -6,8 +6,10 @@
 
     </div>
     <div class="header-audio">
-      <svg *ngIf="((getService().currentResult[0].phonetics[0].audio != ''))" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 75 75"><g fill="#A445ED" fill-rule="evenodd"><circle cx="37.5" cy="37.5" r="37.5" opacity=".25"/><path d="M29 27v21l21-10.5z"/></g></svg>
-
+      <svg (click)="playAudio()" *ngIf="((getService().currentResult[0].phonetics[0].audio != ''))" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 75 75"><g fill="#A445ED" fill-rule="evenodd"><circle cx="37.5" cy="37.5" r="37.5" opacity=".25"/><path d="M29 27v21l21-10.5z"/></g></svg>
+      <!-- <audio id="audio">
+        <source src="{{getService().currentResult[0].phonetics[0].audio}}" />
+      </audio> -->
     </div>
 
   </div>

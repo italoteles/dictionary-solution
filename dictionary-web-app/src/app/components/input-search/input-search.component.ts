@@ -29,8 +29,7 @@ export class InputSearchComponent implements OnInit{
         next: (result: ResultDictionary) => {
 
           this.dictionaryService.currentResult = result;
-          console.log(this.dictionaryService.currentResult);
-          console.log(this.dictionaryService.currentResult[0].meanings);
+
 
         },
         error: (error: any) => {
