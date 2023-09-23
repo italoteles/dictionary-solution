@@ -6,6 +6,12 @@
   <div class="error" *ngIf="formGroup.get('word').invalid && (formGroup.get('word').dirty || formGroup.get('word').touched)">
     Whooops, can't be empty...
   </div>
+  <div class="error" *ngIf="getService().error">
+    <p style="font-weight: 800;">{{getService().error.error.title}} </p>
+    <p>{{getService().error.error.message}} </p>
+    <p>{{getService().error.error.resolution}} </p>
+
+  </div>
 
 
 </form>

@@ -11,6 +11,7 @@ export class DictionaryService {
   url = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 
   public currentResult : ResultDictionary;
+  public error : any;
 
   constructor(private http : HttpClient) { }
 
